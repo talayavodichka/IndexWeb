@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        talayavodichka
+    </title>
+    <script type="text/javascript">
+        function showDate() {
+            var d = new Date();
+            var curr_date = d.getDate();
+            var curr_month = d.getMonth() + 1; //months are zero based
+            var curr_year = d.getFullYear();
+            document.write("Today is " + curr_date + "." + curr_month + "." + curr_year);
+        }
+    </script>
+    <style type="text/css"> /* Кто по вечерам хуй дрочит, тот весь день потом хлопочет */
+        body {
+         background: #000000 url(bg.png);
+         background-size: cover;
+         color: rgb(0, 0, 0);
+        }
+        @font-face {
+        font-family: burgerkinggavno;
+        src: url(font.ttf);
+        }
+        h1 {
+        font-family: burgerkinggavno, 'Comic Sans MS', cursive;
+        font-size: 250%;
+        }
+        div {
+        font-family: burgerkinggavno, 'Comic Sans MS', cursive;
+        font-size: 30px;
+        }
+        a {
+        font-family: burgerkinggavno, 'Comic Sans MS', cursive;
+        font-size: 30px;
+        color: #11006e;
+        }
+        video {
+        height: 20%;
+        width: 20%;
+        position: fixed;
+        }
+        #content {
+            width: 500px; /* Ширина слоя */
+            margin: 0 auto 50px; /* Выравнивание по центру */
+        }
+        #footer {
+            position: fixed; /* Фиксированное положение */
+            left: 0; bottom: 0; /* Левый нижний угол */
+            padding: 10px; /* Поля вокруг текста */
+            background: #ffffff; /* Цвет фона */
+            color: #5f0018; /* Цвет текста */
+            width: 100%; /* Ширина слоя */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Welcome to the official web page of the developers team - <a href="https://gamejolt.com/@talayavodichka">TalayaVodichka</a>!</h1>
+    <div align="center">
+        Hello, visitors!
+        <script type="text/javascript">
+        function setCookie(name, value, expires, path, domain, secure) {
+            document.cookie= name + "=" + escape(value) +
+                ((expires) ? "; expires=" + expires.toGMTString() : "") +
+                ((path) ? "; path=" + path : "") +
+                ((domain) ? "; domain=" + domain : "") +
+                ((secure) ? "; secure" : "");
+        }
+        </script>
+
+        <script type="text/javascript">
+        function getCookie(name) {
+            var dc = document.cookie;
+            var prefix = name + "=";
+            var begin = dc.indexOf("; " + prefix);
+            if (begin == -1) {
+                begin = dc.indexOf(prefix);
+                if (begin != 0) return null;
+            } else {
+                begin += 2;
+            }
+            var end = document.cookie.indexOf(";", begin);
+            if (end == -1) {
+                end = dc.length;
+            }
+            return unescape(dc.substring(begin + prefix.length, end));
+        }
+        </script>
+
+        <script type="text/javascript">
+        function deleteCookie(name, path, domain) {
+            if (getCookie(name)) {
+                document.cookie = name + "=" +
+                    ((path) ? "; path=" + path : "") +
+                    ((domain) ? "; domain=" + domain : "") +
+                    "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+            }
+        }
+        </script>
+        <script type="text/javascript">showDate();
+        </script>
+        <audio autoplay="true" loop="true" src="5. что такое боль.mp3"></audio>
+        <div id="footer"><a href="flyoutwest.exe" download><img src="promo0.gif" alt="promogif">CLICK HERE TO DOWNLOAD <i>NEURALACT</i> (VIEWERS ONLY)</a><img src="promo0.gif" alt="promogif"></div>
+    </div>
+</body>
+</html>
