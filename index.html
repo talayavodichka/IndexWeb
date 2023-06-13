@@ -3,15 +3,23 @@
         <title>
             asocialf
         </title><script type="text/javascript">
-            function showDate() {
+            var index = {};
+            //информация о браузере пользователя
+            index.userInfo = function(){
+                window.console.log(window.navigator.userAgent);
+            }
+            //метод для отображения текущей даты
+            index.showDate = function() {
                 var d = new Date();
-                var curr_date = d.getDate();
-                var curr_month = d.getMonth() + 1;
-                var curr_year = d.getFullYear();
-                document.write("Today is " + curr_date + "." + curr_month + "." + curr_year);
+                var currDate = d.getDate();
+                var currMonth = d.getMonth() + 1;
+                var currYear = d.getFullYear();
+                document.write("Today is " + currDate + "." + currMonth + "." + currYear);
+                document.write("</br>");
+                document.write("" + (366 - ((currMonth - 1) * 30 + 5 + currDate)) + " days left before the New Year.")
             }
         </script>
-        <style type="text/css"> /* Кто по вечерам хуй дрочит, тот весь день потом хлопочет */
+        <style type="text/css"> /* Кто по вечерам хуй дрочит, тот весь день потом хлопочет (просто стили) */
             body {
              background: url(bg1.png) no-repeat;
              background-size: cover;
@@ -69,15 +77,15 @@
         </style>
     </head>
     <body>
-        <h1 align="center">Welcome to the official web page of the - <a href="https://vk.com/asocialf"><i>obshchestvo asotsialno</i></a></h1>
+        <h1 align="center">Welcome to the official web page of the - <a target="_blank" href="https://vk.com/asocialf"><i>obshchestvo asotsialno</i></a></h1>
         <div align="center" style="color: #9e0000;">
             Hello, visitors!
-            <script type="text/javascript">showDate();</script>
+            <script type="text/javascript">index.showDate(); index.userInfo(); </script>
+            <br>
             <pre>
     
             </pre>
-            <iframe frameborder="0" style="border:none;width:100%;height:180px;" width="100%" height="180" src="https://music.yandex.ru/iframe/#track/39809641/8810132">Слушайте <a href='https://music.yandex.ru/album/8810132/track/39809641'></a> — <a href='https://music.yandex.ru/artist/8211137'>Molina</a>моё чирикающее ебало</iframe>
-            <div id="footer"><img src="promo.gif" alt="promogif"><a href="https://vk.com/audio-205158941_456239062_9193c9d9cb4b200cb7">CLICK HERE TO VIEW OUR LAST SINGLE IN VK</a><img src="promo.gif" alt="promogif"></div>
+            <div id="footer"><img src="promo.gif" alt="promogif"><a target="_blank" href="https://vk.com/audio-205158941_456239062_9193c9d9cb4b200cb7">CLICK HERE TO VIEW OUR LAST SINGLE IN VK</a><img src="promo.gif" alt="promogif"></div>
         </div>
     </body>
 </html>
