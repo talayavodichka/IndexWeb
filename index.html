@@ -2,13 +2,15 @@
 <head>
         <title>
             asocialf
-        </title><script type="text/javascript">
+        </title>
+        <script type="text/javascript">
+            //объявление пространства имён методов сайта
             var index = {};
             //информация о браузере пользователя
             index.userInfo = function(){
                 window.console.log(window.navigator.userAgent);
             }
-            //метод для отображения текущей даты
+            //отображение текущей даты
             index.showDate = function() {
                 var d = new Date();
                 var currDate = d.getDate();
@@ -80,7 +82,15 @@
         <h1 align="center">Welcome to the official web page of the - <a target="_blank" href="https://vk.com/asocialf"><i>obshchestvo asotsialno</i></a></h1>
         <div align="center" style="color: #9e0000;">
             Hello, visitors!
-            <script type="text/javascript">index.showDate(); index.userInfo(); </script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js">
+                index.showDate(); 
+                index.userInfo();
+                /*$ (function() {
+                    $("a").click(function() {
+                        $("#footer").hide();
+                    });
+                });*/
+            </script>
             <br>
             <pre>
     
